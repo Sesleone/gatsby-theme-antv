@@ -2,18 +2,37 @@ const { version, repository, homepage } = require('./package.json');
 
 module.exports = {
   plugins: [
+    { 
+      resolve: `gatsby-plugin-tawk`,
+      options: {
+        tawkId: "5e7f678d69e9320caabdf7d9",
+        // get this from the tawk script widget
+      },
+    },
     {
       resolve: '@antv/gatsby-theme-antv',
-      options: {},
+      options: {
+        GATrackingId: `UA-XXXXXXXXX-X`,
+        pathPrefix: '/g2',
+        // antd 主题：https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+        theme: {
+          'primary-color': '#db4241',
+        },
+        pwa: true, // 是否开启 gatsby-plugin-offline
+        cname: true, // 是否自动从 siteUrl 中提取 CNAME 文件
+        codeSplit: true, // 是否开启 gatsby 按路由的代码分割，默认为 false
+
+      },
     },
   ],
   siteMetadata: {
-    title: 'AntV test site',
-    description: 'Ant Visualization solution home page',
+    title: 'Ucan',
+    description: 'staff transport solutions',
     siteUrl: homepage,
     githubUrl: repository.url,
     navs: [
-      {
+     
+    /* {
         slug: 'docs/specification/getting-started',
         title: {
           zh: '设计语言',
@@ -38,13 +57,13 @@ module.exports = {
         slug: 'independent',
         title: {
           zh: '独立',
-          en: 'MyApp',
+          en: '',
         },
         // target: '_blank',
-      },
+      },*/
     ],
     docs: [
-      {
+    /* {
         slug: 'specification/category',
         title: {
           zh: '分类一',
@@ -67,22 +86,20 @@ module.exports = {
           en: 'category2',
         },
         order: 4,
-      },
+      },*/
     ],
     examples: [
-      {
+     /* {
         slug: 'category',
         icon: 'pie',
         title: {
           zh: '饼图分类',
           en: 'Category',
         },
-      },
+      },*/
     ],
     versions: {
-      [version]: 'https://ant.design',
-      '2.x': 'https://2x.ant.design',
-      '1.x': 'https://1x.ant.design',
+      [version]: 'https://ucanshuttle.co.za',
     },
     playground: {
       container: '<div id="container" class="ok" />',

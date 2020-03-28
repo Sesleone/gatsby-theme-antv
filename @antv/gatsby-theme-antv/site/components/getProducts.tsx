@@ -53,7 +53,7 @@ export const getProducts = ({
     },
   );
   const products = [
-    {
+   /* {
       title: 'G2',
       icon:
         'https://gw.alipayobjects.com/zos/antfincdn/trEfLRh5pc/G2%252520keshihuatuxingyufa.svg',
@@ -406,7 +406,7 @@ export const getProducts = ({
         },
       ],
     },
-  ];
+  */];
 
   return products;
 };

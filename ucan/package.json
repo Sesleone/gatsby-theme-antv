@@ -1,15 +1,15 @@
 {
   "private": true,
-  "name": "example",
+  "name": "ucan",
   "version": "1.0.0",
   "license": "MIT",
-  "homepage": "https://test.antv.vision",
+  "homepage": "https://ucanshuttle.co.za",
   "repository": {
     "type": "git",
-    "url": "https://github.com/antvis/antvis.github.io"
+    "url": "https://github.com/Sesleone/gatsby-theme-antv.git"
   },
   "bugs": {
-    "url": "https://github.com/antvis/antvis.github.io/issues"
+    "url": "https://github.com/Sesleone/gatsby-theme-antv.git/issues"
   },
   "scripts": {
     "build": "npm run clean && gatsby build --prefix-paths --no-uglify",
@@ -22,6 +22,7 @@
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "gatsby": "^2.15.34",
+    "gatsby-plugin-tawk": "^1.0.0",
     "ptz-i18n": "^1.0.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"

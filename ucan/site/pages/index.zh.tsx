@@ -5,6 +5,8 @@ import Banner from '@antv/gatsby-theme-antv/site/components/Banner';
 import Companies from '@antv/gatsby-theme-antv/site/components/Companies';
 import Features from '@antv/gatsby-theme-antv/site/components/Features';
 import Cases from '@antv/gatsby-theme-antv/site/components/Cases';
+import Header from '@antv/gatsby-theme-antv/site/components/Header';
+import Footer from '@antv/gatsby-theme-antv/site/components/Footer';
 import BannerSVG from '@antv/gatsby-theme-antv/site/components/BannerSVG';
 
 const IndexPage = () => {
@@ -39,45 +41,26 @@ const IndexPage = () => {
 
   const companies = [
     {
-      name: '公司1',
+      name: 'Woolworths',
       img:
         'https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*Z1NnQ6L4xCIAAAAAAAAAAABkARQnAQ',
     },
     {
-      name: '公司2',
+      name: 'Mass Mart',
       img:
         'https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*6u3hTpsd7h8AAAAAAAAAAABkARQnAQ',
     },
     {
-      name: '公司3',
+      name: 'Shopright Checkers',
       img:
         'https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*Fw8HTbFgUdAAAAAAAAAAAABkARQnAQ',
     },
     {
-      name: '公司4',
+      name: 'NetCare',
       img:
-        'https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*lUdjTqQix48AAAAAAAAAAABkARQnAQ',
+        'https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*Fw8HTbFgUdAAAAAAAAAAAABkARQnAQ',
     },
-    {
-      name: '公司5',
-      img:
-        'https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*1q8NQZ9GaN0AAAAAAAAAAABkARQnAQ',
-    },
-    {
-      name: '公司6',
-      img:
-        'https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*SqmTSqj4FjEAAAAAAAAAAABkARQnAQ',
-    },
-    {
-      name: '公司7',
-      img:
-        'https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*1q8NQZ9GaN0AAAAAAAAAAABkARQnAQ',
-    },
-    {
-      name: '公司8',
-      img:
-        'https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*SqmTSqj4FjEAAAAAAAAAAABkARQnAQ',
-    },
+
   ];
 
   const cases = [
@@ -85,9 +68,9 @@ const IndexPage = () => {
       logo:
         'https://gw.alipayobjects.com/mdn/rms_23b644/afts/img/A*2Ij9T76DyCcAAAAAAAAAAABkARQnAQ',
       isAppLogo: true,
-      title: '灯塔专业版',
+      title: 'Optimised Booking',
       description:
-        '深入金融的基金深入金融的基金深入金融的基金深入金融的基金深入金融的基金深入金融的基金深入金融的基金深入金融的基金深入金融的基金深入金融的基金深入金融的基金',
+        'description',
       link: '#',
       image:
         'https://gw.alipayobjects.com/mdn/rms_23b644/afts/img/A*oCd7Sq3N-QEAAAAAAAAAAABkARQnAQ',
@@ -95,9 +78,9 @@ const IndexPage = () => {
     {
       logo:
         'https://gw.alipayobjects.com/mdn/rms_23b644/afts/img/A*ekkhR7ISzUsAAAAAAAAAAABkARQnAQ',
-      title: '灯塔专业版2',
+      title: 'Ensure cleanliness',
       description:
-        '深2222222入金融的基金深入金融的基金深2222222入金融的基金深入金融的基金深2222222入金融的基金深入金融的基金',
+        'description',
       image:
         'https://gw.alipayobjects.com/mdn/rms_23b644/afts/img/A*oCd7Sq3N-QEAAAAAAAAAAABkARQnAQ',
     },
@@ -105,27 +88,32 @@ const IndexPage = () => {
 
   const bannerButtons = [
     {
-      text: t('图表示例'),
+      text: 'Why Ucan',//t('图表示例'),
       link: '#features',
       type: 'primary',
     },
     {
-      text: t('现在开始使用'),
+      text: 'Details', //t('下载使用'),
       link: 'https://antv.alipay.com/zh-cn/index.html', // `/${i18n.language}/examples/basic`
     },
   ];
 
-  // const coverImage = <img width='100%' src='https://gw.alipayobjects.com/mdn/antv_site/afts/img/A*o40BRo-ANLoAAAAAAAAAAABkARQnAQ' alt='cover' />
+
+  //to translate 
+  //t('让数据栩栩如生')
+  const coverImage = <img width='100%' src='https://gw.alipayobjects.com/mdn/antv_site/afts/img/A*o40BRo-ANLoAAAAAAAAAAABkARQnAQ' alt='cover' />
   return (
     <>
-      <SEO title={t('蚂蚁数据可视化')} lang={i18n.language} />
+      <SEO title={'transport'} lang={i18n.language} />
+
       <Banner
-        // coverImage={coverImage}
-        coverImage={<BannerSVG />}
-        title={t('让数据栩栩如生')}
+        coverImage={coverImage}
+        //coverImage={<BannerSVG />}
+        title={'Ucan Get your Staff on Time'}
         description={t(
-          'AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践。',
+          'Platform for enterprises to manage and automate their staff transportation.',
         )}
+        notifications={[]}
         className="banner"
         buttons={bannerButtons}
         showGithubStars={false}
@@ -134,20 +122,25 @@ const IndexPage = () => {
           console.log('close'); // eslint-disable-line no-console
         }}
         onPlayVideo={() => {
-          console.log('paly'); // eslint-disable-line no-console
+          console.log('play'); // eslint-disable-line no-console
         }}
+
+
       />
+
       <Features
         id="features"
         features={features}
-        title="我们的优势"
+        title="What you get"
         style={{ width: '100%' }}
       />
-      <Features features={features} style={{ width: '100%' }} />
+
       <Cases cases={cases} />
-      <Companies title={t('合作公司')} companies={companies} />
+      <Companies title={'Fellas enjoying our awesome service'} companies={companies} />
+
     </>
   );
 };
 
 export default IndexPage;
+
