@@ -72,8 +72,8 @@ const IndexPage = () => {
       description:
         'description',
       link: '#',
-      image:
-        'https://gw.alipayobjects.com/mdn/rms_23b644/afts/img/A*oCd7Sq3N-QEAAAAAAAAAAABkARQnAQ',
+      image:require('../images/screens.png')
+        ,
     },
     {
       logo:
@@ -81,8 +81,7 @@ const IndexPage = () => {
       title: 'Ensure cleanliness',
       description:
         'description',
-      image:
-        'https://gw.alipayobjects.com/mdn/rms_23b644/afts/img/A*oCd7Sq3N-QEAAAAAAAAAAABkARQnAQ',
+      image: require('../images/screens.png'),
     },
   ];
 
@@ -92,19 +91,17 @@ const IndexPage = () => {
       link: '#features',
       type: 'primary',
     },
-    {
-      text: 'Details', //t('下载使用'),
-      link: 'https://antv.alipay.com/zh-cn/index.html', // `/${i18n.language}/examples/basic`
-    },
+   
   ];
 
 
   //to translate 
   //t('让数据栩栩如生')
+  const desimage  = <img width='100%' src={require('../images/screens.png')} alt='Screens' />
   const coverImage = <img width='100%' src='https://gw.alipayobjects.com/mdn/antv_site/afts/img/A*o40BRo-ANLoAAAAAAAAAAABkARQnAQ' alt='cover' />
   return (
     <>
-      <SEO title={'transport'} lang={i18n.language} />
+      <SEO title={'Ucan'} lang={i18n.language} titleSuffix={'Staff Transport'}/>
 
       <Banner
         coverImage={coverImage}
@@ -117,7 +114,7 @@ const IndexPage = () => {
         className="banner"
         buttons={bannerButtons}
         showGithubStars={false}
-        video="https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/file/A*PDpiR4U2oFEAAAAAAAAAAABkARQnAQ"
+        
         onCloseVideo={() => {
           console.log('close'); // eslint-disable-line no-console
         }}
@@ -131,12 +128,14 @@ const IndexPage = () => {
       <Features
         id="features"
         features={features}
-        title="What you get"
+        title="Why Ucan?"
         style={{ width: '100%' }}
       />
 
       <Cases cases={cases} />
-      <Companies title={'Fellas enjoying our awesome service'} companies={companies} />
+   {/**
+    <Companies title={'Fellas enjoying our awesome service'} companies={companies} />
+   */} 
 
     </>
   );

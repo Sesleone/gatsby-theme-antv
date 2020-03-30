@@ -13,7 +13,7 @@ module.exports = {
       resolve: '@antv/gatsby-theme-antv',
       options: {
         GATrackingId: `UA-XXXXXXXXX-X`,
-        pathPrefix: '/g2',
+        pathPrefix: '/',
         // antd 主题：https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
         theme: {
           'primary-color': '#db4241',
@@ -27,7 +27,7 @@ module.exports = {
   ],
   siteMetadata: {
     title: 'Ucan',
-    description: 'staff transport solutions',
+    description: 'Ucan -robust staff transport solution',
     siteUrl: homepage,
     githubUrl: repository.url,
     navs: [
