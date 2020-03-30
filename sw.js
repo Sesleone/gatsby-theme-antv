@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-cf38a12877f7a82baabf.js"
+    "url": "webpack-runtime-c8c1b1f76fa826078b60.js"
   },
   {
     "url": "styles.86b75f7b66c80be1640b.css"
@@ -40,7 +40,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "967a0988ae4663f7ac56e233fdd64972"
+    "revision": "0320981af23e4a6403ade0b695b99b11"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-fdf79059160765789bfc.js"
@@ -51,11 +51,11 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "79100d694daddae757ecab39aeea66e7"
+    "revision": "1360101d3f1d73723d05edc41d9868c1"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "ae3bd8cdad5faa632ae0eb859ef751d8"
+    "revision": "08ee3d1a19524f0c67c5d03346d47e15"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -143,12 +143,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/ucanlanding`), ``)
+  pathname = pathname.replace(new RegExp(`^`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/ucanlanding/app-19c4b6443e6d64c28fbd.js`))) {
+  if (!resources || !(await caches.match(`/app-2c1eacd0560e9ff53ee3.js`))) {
     return await fetch(event.request)
   }
 
@@ -161,7 +161,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/ucanlanding/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
