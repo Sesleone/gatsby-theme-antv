@@ -3,11 +3,11 @@
 <url> <loc>https://ucanshuttle.co.za/zh/docs/other/getting-started</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/zh/docs/specification/getting-started</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/zh/docs/specification/test-only-cn</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ucanshuttle.co.za/en/docs/other/category/test1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/zh/docs/other/category/test1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/en/docs/other/category/test2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ucanshuttle.co.za/zh/docs/other/category/test2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/en/docs/specification/category/test1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ucanshuttle.co.za/en/docs/other/category/test1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ucanshuttle.co.za/zh/docs/other/category/test2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/zh/docs/specification/category/test1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/en/docs/specification/category/test2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/zh/docs/specification/category/test2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -18,9 +18,9 @@
 <url> <loc>https://ucanshuttle.co.za/en/examples/basic/API</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/zh/examples/basic/API</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/en/examples/basic/design</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ucanshuttle.co.za/zh/examples/basic</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/zh/examples/basic/design</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/en/examples/basic</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ucanshuttle.co.za/zh/examples/basic</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/en/examples/gallery</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/zh/examples/gallery</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ucanshuttle.co.za/en/examples/second</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
