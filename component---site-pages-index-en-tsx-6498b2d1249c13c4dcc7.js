@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[11],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[10,11],{
 
 /***/ "+IV6":
 /***/ (function(module, exports) {
@@ -11213,16 +11213,16 @@ var index_zh_IndexPage = function IndexPage() {
 
   var features = [{
     icon: 'https://gw.alipayobjects.com/zos/basement_prod/5dbaf094-c064-4a0d-9968-76020b9f1510.svg',
-    title: t('简单方便'),
-    description: t('从数据出发，仅需几行代码可以轻松获得想要的图表展示效果。')
+    title: 'Cost Saver',
+    description: 'Intelligence Reporting offering on demand insight and reducing staff transportation cost '
   }, {
     icon: 'https://gw.alipayobjects.com/zos/basement_prod/0a0371ab-6bed-41ad-a99b-87a5044ba11b.svg',
-    title: t('方便可靠'),
-    description: t('大量产品实践之上，提供绘图引擎、完备图形语法，专业设计规范。')
+    title: 'Risk Mitigator',
+    description: 'Make plans in advance & make data driven decision about their staff transportation department'
   }, {
     icon: 'https://gw.alipayobjects.com/zos/basement_prod/716d0bc0-e311-4b28-b79f-afdd16e8148e.svg',
-    title: t('无限可能'),
-    description: t('任何图表，都可以基于图形语法灵活绘制，满足你无限的创意。')
+    title: 'Route Optimisation',
+    description: 'We optimise the Routes for the driver in relation to time traffic to get your staff to work on time'
   }];
   var companies = [{
     name: 'Woolworths',
@@ -11270,7 +11270,7 @@ var index_zh_IndexPage = function IndexPage() {
     coverImage: coverImage //coverImage={<BannerSVG />}
     ,
     title: 'Ucan Get your Staff on Time',
-    description: t('Platform for enterprises to manage and automate their staff transportation.'),
+    description: 'Software Solution built for enteprise to manage their staff transportation , logistics & costs',
     notifications: [],
     className: "banner",
     buttons: bannerButtons,
@@ -15512,6 +15512,17 @@ PortalWrapper_PortalWrapper.propTypes = {
 
 /***/ }),
 
+/***/ "ug36":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index_zh__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("jAeI");
+
+/* harmony default export */ __webpack_exports__["default"] = (_index_zh__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
 /***/ "vdEC":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16724,4 +16735,4 @@ exports.mediaProperties = mediaProperties;
 /***/ })
 
 }]);
-//# sourceMappingURL=component---site-pages-index-zh-tsx-4ac716c9a2a185324d2c.js.map
+//# sourceMappingURL=component---site-pages-index-en-tsx-6498b2d1249c13c4dcc7.js.map
